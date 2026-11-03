@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pizzas quentinhas, hambúrgueres suculentos e muito sabor. Faz já a tua encomenda.">
+  <title>Brasa & Massa — Pizza & Burger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="page-frame">
+    <header class="site-header">
+      <a class="logo" href="#" aria-label="Brasa & Massa início">
+        <span class="logo-mark">Brasa & Massa</span>
+        <span class="logo-sub">PIZZARIA & HAMBURGUERIA</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#especialidades">Especialidades</a>
+        <a href="#combos">Combos</a>
+        <a href="#menu">O nosso menu</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="header-cta" href="#menu">Pedir agora</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img class="hero-photo" src="imagem/principal.png" alt="Hambúrguer artesanal com queijo e vegetais">
+        <div class="hero-overlay"></div>
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span></span> SABOR FEITO NA HORA <span></span></p>
+          <h1><span>PIZZA &</span><br>BURGER</h1>
+          <p class="hero-description">Mordidas generosas. Queijo a derreter.<br>O sabor que transforma qualquer dia.</p>
+          <a class="button button-red" href="#menu">Encomendar agora </a>
+        </div>
+        <div class="hero-sticker"><span>FRESCO</span><b>+</b><span>QUENTE</span><b>+</b><span>DELICIOSO</span></div>
+        <div class="hero-bottom-note">PREPARADO COM PAIXÃO · SERVIDO QUENTINHO</div>
+      </section>
+
+      <section class="fresh-section" id="especialidades">
+        <div class="section-intro">
+          <p class="eyebrow">DA NOSSA COZINHA PARA TI</p>
+          <h2>FRESH, HOT <span>&</span><br>CHEIO DE SABOR.</h2>
+          <p>Ingredientes selecionados, receitas cheias de personalidade<br class="desktop-break"> e aquele sabor que dá vontade de repetir.</p>
+          <a class="button button-red" href="#menu">Ver o menu</a>
+        </div>
+        <div class="food-stage">
+          <div class="paint-splash"></div>
+          <img class="floating-food food-left" src="imagem/ham2.png" alt="Hambúrguer artesanal" loading="lazy">
+          <img class="floating-food food-center" src="imagem/hamburgue1.png" alt="Hambúrguer com queijo" loading="lazy">
+          <img class="floating-food food-right" src="imagem/ham3.png" alt="Hambúrguer com vegetais frescos" loading="lazy">
+          <span class="food-spark spark-one">✦</span><span class="food-spark spark-two">✦</span><span class="food-spark spark-three">✦</span>
+        </div>
+        <p class="stage-caption">O COMBO PERFEITO EXISTE. E ESTÁ AQUI.</p>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="menu-heading">
+          <div><p class="eyebrow">ESCOLHAS QUE NÃO FALHAM</p><h2>Os favoritos</h2></div>
+          <div class="menu-arrows"><span>●</span><span>●</span><span>●</span><span>●</span><span>○</span></div>
+        </div>
+        <div class="filter-row" aria-label="Filtrar menu">
+          <button class="filter-button active" data-filter="Todos">Tudo</button>
+          <button class="filter-button" data-filter="Hambúrguer">Hambúrgueres</button>
+          <button class="filter-button" data-filter="Pizza">Pizzas</button>
+          <button class="filter-button" data-filter="Acompanhamento">Acompanhamentos</button>
+          <button class="filter-button" data-filter="Bebida">Bebidas</button>
+        </div>
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="combo-section" id="combos">
+        <div class="combo-image">
+          <img src="imagem/combo.png" alt="Pizza acabada de sair do forno" loading="lazy">
+          <span class="combo-badge">COMBO<br><strong>DA CASA</strong></span>
+        </div>
+        <div class="combo-copy">
+          <p class="eyebrow">PARA PARTILHAR (OU NÃO)</p>
+          <h2>Mais sabor.<br><span>Melhor companhia.</span></h2>
+          <p>Junta os teus favoritos e aproveita um combo feito para matar a fome e criar bons momentos.</p>
+          <ul><li>✓ Hambúrguer ou pizza à escolha</li><li>✓ Acompanhamento crocante</li><li>✓ Bebida bem fresca</li></ul>
+          <a class="button button-dark" href="#menu">Descobrir combos</a>
+        </div>
+      </section>
+
+      <section class="contact-banner" id="contacto">
+        <div class="contact-flame">✦</div>
+        <div><p class="eyebrow eyebrow-light">A FOME NÃO ESPERA</p><h2>Hoje é dia de<br><span>comer bem.</span></h2><p>Faz o teu pedido pelo WhatsApp e levanta-o no nosso estabelecimento.</p></div>
+        <a class="button button-yellow" id="contactOrder" href="#" target="_blank" rel="noopener">Encomendar para levantamento </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="logo footer-logo" href="#"><span class="logo-mark">Brasa & Massa</span><span class="logo-sub">PIZZARIA & HAMBURGUERIA</span></a>
+      <p>Feito com fogo. Servido com amor.</p>
+      <div class="footer-links"><a href="#especialidades">Especialidades</a><a href="#menu">Menu</a><a id="footerWhatsApp" href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+      <small>© <span id="year"></span> José Vuama.Built code</small>
+    </footer>
+  </div>
+  <a class="floating-order" id="floatingOrder" href="#" target="_blank" rel="noopener" aria-label="Encomendar para levantamento">💬</a>
+</body>
+</html>
